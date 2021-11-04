@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/hrs_input_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:hint="(hours)"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/hrs_input"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textSize="25dp"
+                android:layout_width="130dp"
+                android:minWidth="40dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                tools:contentDescription="hrs"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+                android:id="@+id/colon_in_between"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textSize="25dp"
+                app:layout_constraintStart_toEndOf="@id/hrs_input_layout"
+                app:layout_constraintTop_toTopOf="@id/hrs_input_layout"
+                app:layout_constraintBottom_toBottomOf="@id/hrs_input_layout"
+                android:padding="9dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/min_input_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/colon_in_between"
+            app:layout_constraintTop_toTopOf="parent"
+            android:hint="(minutes)"
+            >
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/min_input"
+                android:layout_width="130dp"
+                android:minWidth="40dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textSize="25dp"
+                tools:contentDescription="minutes"
+                app:layout_constraintStart_toEndOf="@id/colon_in_between"
+                app:layout_constraintTop_toTopOf="@id/colon_in_between"
+                app:layout_constraintBottom_toBottomOf="@id/colon_in_between"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

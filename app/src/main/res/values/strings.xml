@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name"> Anti Phone </string>
+    <string name="welcome_title">&#160;Anti Phone&#160;</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="start_button">Start</string>
+    <string name="sub_title_text">Give your eyes rest&#160;</string>
+    <string name="stop_button">Stop</string>
+    <string name="hrs_display">%02d</string>
+    <string name="mins_display">%02d</string>
+
+</resources>
